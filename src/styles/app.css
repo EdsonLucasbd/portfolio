@@ -4,3 +4,62 @@
   display: flex;
   background-color: #0c0c0c;
 }
+
+.menuContainer {
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: fixed;
+}
+
+.pages {
+  margin-left: 7rem;
+}
+
+.pages a {
+  margin: 1rem;
+  opacity: 20%;
+  transition: linear 0.5s;
+}
+
+.pages :target { 
+  color: red;
+  opacity: 100%;
+}
+
+.contacts {
+  position: absolute;
+  top: 1.5rem;
+  left: 60%;
+}
+
+.contacts :nth-child(1) {
+  margin-left: 1.5rem;
+}
+
+#home img{
+  width: 300px;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
+}
+
+#experiences {
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
+}
+
+#projects {
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
+}
