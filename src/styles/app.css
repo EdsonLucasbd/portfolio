@@ -8,8 +8,10 @@
 .menuContainer {
   color: #fff;
   padding: 20px;
+  width: 100%;
   font-size: 1.2rem;
   font-weight: 500;
+  position: fixed;
 }
 
 .pages {
@@ -18,11 +20,13 @@
 
 .pages a {
   margin: 1rem;
+  opacity: 20%;
   transition: linear 0.5s;
 }
 
-.pages a:not(:active){ 
-  opacity: 20%;
+.pages :target { 
+  color: red;
+  opacity: 100%;
 }
 
 .contacts {
@@ -33,4 +37,26 @@
 
 .contacts :nth-child(1) {
   margin-left: 1.5rem;
+}
+
+#home img{
+  width: 300px;
+}
+
+#home {
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
+}
+
+#experiences {
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
+}
+
+#projects {
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
 }

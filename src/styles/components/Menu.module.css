@@ -1,0 +1,30 @@
+.menuContainer {
+  color: #fff;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pages {
+  margin-left: 7rem;
+}
+
+.pages a {
+  margin: 1rem;
+  opacity: 20%;
+  transition: linear 0.5s;
+}
+
+.pages a:focus { 
+  opacity: 100%;
+}
+
+.contacts {
+  position: absolute;
+  top: 1.5rem;
+  left: 60%;
+}
+
+.contacts :nth-child(1) {
+  margin-left: 1.5rem;
+}
