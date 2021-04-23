@@ -24,7 +24,7 @@
   transition: linear 0.5s;
 }
 
-.pages a:active { 
+.pages a:hover { 
   opacity: 100%;
 }
 

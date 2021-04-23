@@ -1,5 +1,61 @@
 #experiences {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   height: 100vh;
   padding-top: 2.5rem;
+}
+
+.expContainer {
+  width: 30%;
+}
+
+.expContainer h5{
+  color: #9465FF;
+}
+
+.line {
+  width: 0.2rem;
+  height: 20rem;
+  background-color: #9465FF;
+}
+
+.circle, .circle2 {
+  background-color: #9465FF;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.tecnologiesContainer {
+  width: 30%;
+}
+
+.tecnologiesContainer h5 {
+  color: #9465FF;
+}
+
+#js {
+  font-size: 3rem;
+  margin-left: 100px;
+  color: #fff;
+}
+
+#react {
+  font-size: 3rem;
+  margin-left: 211px;
+  color: #fff;
+}
+
+#reactNative {
+  font-size: 2rem;
+  margin-left: 90px;
+  color: #fff;
+}
+
+#python {
+  font-size: 1rem;
+  margin-left: 50px;
   color: #fff;
 }
