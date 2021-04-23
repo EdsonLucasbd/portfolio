@@ -1,10 +1,17 @@
 import React from 'react'
-import styles from '../styles/pages/Experiences.module.css';
+import '../styles/pages/Projects.css';
 
 export default function Projects() {
   return (
-    <section className={styles.container}>
-      <h1>Meus projetos</h1>
+    <section id='projects'>
+      <h4>&lt;projects&gt;</h4>
+      <div className="blockContainer">
+        <div className='block'></div>
+        <div className='block'></div>
+        <div className='block'></div>
+        <div className='block'></div>
+      </div>
+      <h4>&lt;/projects&gt;</h4>
     </section>
   )
 }

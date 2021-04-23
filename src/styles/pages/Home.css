@@ -1,0 +1,36 @@
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 2.5rem;
+}
+
+#home img {
+  width: 300px;
+}
+
+.nameContainer h5 {
+  color: #9465FF;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.nameContainer p {
+  color: #fff;
+  font-size: 4.5rem;
+  margin: 0 0 0 15px;
+  line-height: 70px;
+
+}
+
+.aboutContainer h5 {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #9465FF;
+}
+
+.aboutContainer p {
+  color: #fff;
+  margin: 0 0 0 15px;
+}

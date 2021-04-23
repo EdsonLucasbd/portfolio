@@ -37,28 +37,3 @@
 .contacts :nth-child(1) {
   margin-left: 1.5rem;
 }
-
-#home img{
-  width: 300px;
-}
-
-#home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding-top: 2.5rem;
-  color: #fff;
-}
-
-#experiences {
-  height: 100vh;
-  padding-top: 2.5rem;
-  color: #fff;
-}
-
-#projects {
-  height: 100vh;
-  padding-top: 2.5rem;
-  color: #fff;
-}
