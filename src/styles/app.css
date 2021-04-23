@@ -24,8 +24,7 @@
   transition: linear 0.5s;
 }
 
-.pages :target { 
-  color: red;
+.pages a:active { 
   opacity: 100%;
 }
 
