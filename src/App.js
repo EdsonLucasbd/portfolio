@@ -1,12 +1,14 @@
 import React from 'react';
 import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
-
 import Button from './components/Button';
+import Experiences from './pages/Experiences';
 
 import './styles/app.css';
 
+
 function App() {
+  
   return (
     <div className='containter'>
       <nav className='menuContainer'>
@@ -23,13 +25,11 @@ function App() {
       </nav>
 
       <section id='home'>
-        <h1>Home</h1>
+        <h1>&lt;Edson Lucas&gt;</h1>
         <img src="/fotoPortfolio.png" alt="profile avatar"/>
       </section>
 
-      <section id='experiences'>
-        <h1>Minhas experiências profissionais</h1>
-      </section>
+      <Experiences />
 
       <section id='projects'>
         <h1>Meus projetos</h1>
