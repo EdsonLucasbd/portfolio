@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/pages/Experiences.css';
 
 export default function Experiences() {
+  
   return (
     <section id='experiences'>
       <div className='expContainer'>

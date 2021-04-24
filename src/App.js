@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Button from './components/Button';
@@ -9,7 +9,26 @@ import Projects from './pages/Projects';
 import './styles/app.css';
 
 function App() {
-  
+  const scrollOnClick = (event) => {
+    event.preventDefault();
+    const element = event.target;
+    const id = element.getAttribute('href');
+    const section = document.querySelector(id).offsetTop;
+
+    window.scroll({
+      top: section,
+      behavior: 'smooth',
+    });
+  }
+
+  useEffect(() => {
+    const menuItems = document.querySelectorAll('.pages a');
+
+    menuItems.forEach(item => {
+      item.addEventListener('click', scrollOnClick);
+    })
+
+  },[])
   return (
     <div className='containter'>
       <nav className='menuContainer'>
