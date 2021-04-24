@@ -12,6 +12,8 @@
   font-size: 1.2rem;
   font-weight: 500;
   position: fixed;
+  z-index: 1;
+  background-color: #0c0c0c;
 }
 
 .pages {

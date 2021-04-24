@@ -1,7 +1,7 @@
 #experiences {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
   height: 100vh;
   padding-top: 2.5rem;
@@ -9,15 +9,19 @@
 
 .expContainer {
   width: 30%;
+  margin-left: 10%;
 }
 
-.expContainer h5{
+.expContainer h5 {
   color: #9465FF;
+  padding-bottom: 10px;
+  padding: 0px;
 }
 
 .line {
   width: 0.2rem;
   height: 20rem;
+  margin-left: 100px;
   background-color: #9465FF;
 }
 
@@ -26,6 +30,51 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
+}
+
+#year {
+  color: #9465FF;
+}
+
+.firstExpContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -20rem;
+  left: 5.9rem;
+  color: #fff;
+}
+
+.firstExpContainer #year {
+  margin-left: 10px;
+}
+
+.firstExpContainer #expInfo {
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 27px;
+  text-align: left;
+}
+
+.secondExpContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: row-reverse;
+  top: -12rem;
+  right: 22.8rem;
+  color: #fff;
+}
+
+.secondExpContainer #year {
+  margin-right: 10px;
+}
+
+.secondExpContainer #expInfo {
+  position: absolute;
+  top: 1.5rem;
+  margin-right: 27px;
+  text-align: right;
 }
 
 .tecnologiesContainer {

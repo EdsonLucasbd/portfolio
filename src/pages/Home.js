@@ -15,6 +15,8 @@ export default function Home() {
       <div className="aboutContainer">
         <h5>&lt;about_me&gt;</h5>
         <p>Aspirante a programador full stack</p>
+        <p>Gamer</p>
+        <p>Amante de séries</p>
         <h5>&lt;/about_me&gt;</h5>
       </div>
     </section>
