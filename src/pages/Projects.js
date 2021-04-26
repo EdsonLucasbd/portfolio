@@ -1,4 +1,6 @@
 import React from 'react'
+import Project from '../components/Project';
+
 import '../styles/pages/Projects.css';
 
 export default function Projects() {
@@ -6,20 +8,8 @@ export default function Projects() {
     <section id='projects'>
       <h4>&lt;projects&gt;</h4>
       <div className="blockContainer">
-        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
-          <img src="/takecare.png" alt="takeCare icon"/>
-        </a>
-        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
-          <img src="/takecare.png" alt="takeCare icon"/>
-        </a>
-
-        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
-          <img src="/takecare.png" alt="takeCare icon"/>
-        </a>
-
-        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
-          <img src="/takecare.png" alt="takeCare icon"/>
-        </a>
+        <Project link={"https://takecare-edsonlucasbd.vercel.app/"} image={'/projectsIcons/takecare.png'} />
+        <Project link={"https://best-desafio-final.herokuapp.com/"} image={'/projectsIcons/cfpicon.png'} />
       </div>
       <h4>&lt;/projects&gt;</h4>
     </section>
