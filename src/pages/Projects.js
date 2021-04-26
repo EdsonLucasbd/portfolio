@@ -6,10 +6,20 @@ export default function Projects() {
     <section id='projects'>
       <h4>&lt;projects&gt;</h4>
       <div className="blockContainer">
-        <div className='block'></div>
-        <div className='block'></div>
-        <div className='block'></div>
-        <div className='block'></div>
+        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
+          <img src="/takecare.png" alt="takeCare icon"/>
+        </a>
+        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
+          <img src="/takecare.png" alt="takeCare icon"/>
+        </a>
+
+        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
+          <img src="/takecare.png" alt="takeCare icon"/>
+        </a>
+
+        <a href="https://takecare-edsonlucasbd.vercel.app/" target='blank' className='block'>
+          <img src="/takecare.png" alt="takeCare icon"/>
+        </a>
       </div>
       <h4>&lt;/projects&gt;</h4>
     </section>

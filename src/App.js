@@ -9,26 +9,35 @@ import Projects from './pages/Projects';
 import './styles/app.css';
 
 function App() {
-  const scrollOnClick = (event) => {
-    event.preventDefault();
-    const element = event.target;
-    const id = element.getAttribute('href');
-    const section = document.querySelector(id).offsetTop;
-
-    window.scroll({
-      top: section,
-      behavior: 'smooth',
-    });
-  }
 
   useEffect(() => {
     const menuItems = document.querySelectorAll('.pages a');
+
+    const scrollToPosition = (to) => {
+      window.scroll({
+        top: to,
+        behavior: 'smooth',
+      });
+    }
+  
+    const getScrollTop = (element) => {
+      const id = element.getAttribute('href');
+      return document.querySelector(id).offsetTop;
+    }
+  
+    const scrollOnClick = (event) => {
+      event.preventDefault();
+      const to = getScrollTop(event.target);
+  
+      scrollToPosition(to);
+    }
 
     menuItems.forEach(item => {
       item.addEventListener('click', scrollOnClick);
     })
 
-  },[])
+  },[]);
+  
   return (
     <div className='containter'>
       <nav className='menuContainer'>
