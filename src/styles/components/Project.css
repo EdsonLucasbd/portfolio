@@ -23,6 +23,7 @@
 
 .block svg {
   position: absolute;
+  font-size: 1rem;
   top: 80%;
   left: 80%;
   opacity: 0;

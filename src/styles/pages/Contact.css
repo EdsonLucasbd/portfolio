@@ -1,0 +1,84 @@
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 2.5rem;
+  color: #fff;
+}
+
+.formContainer h4 {
+  color: #9465FF;
+}
+
+.formContainer form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 0 0 30px;
+}
+
+input, textArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 19.209rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+#clear {
+  width: 8rem;
+  height: 3.2rem;
+  color: #fff;
+  background-color: #db1d4b;
+  margin-right: 52px;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+}
+
+#clear:hover {
+  opacity: 100%;
+}
+
+#submit {
+  width: 8rem;
+  height: 3.2rem;
+  color: #0c0c0c;
+  border-radius: 5%;
+  border: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #9465FF;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.8s;
+}
+
+[data-anime='right'] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime='left'] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}

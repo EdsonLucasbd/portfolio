@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import Button from './components/Button';
 import Home from './pages/Home';
 import Experiences from './pages/Experiences';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 import './styles/app.css';
 
@@ -45,11 +45,11 @@ function App() {
           <a href='#home'>&lt;home&gt;</a>
           <a href='#experiences'>&lt;experiences&gt;</a>
           <a href='#projects'>&lt;projects&gt;</a>
+          <a href='#contact'>&lt;contact&gt;</a>
         </div>
         <div className='contacts'>
-          <Button iconName={faGithub}/>
-          <Button iconName={faLinkedinIn}/>
-          <Button iconName={faEnvelope}/>
+          <Button iconName={faGithub} link={'https://github.com/EdsonLucasbd'}/>
+          <Button iconName={faLinkedinIn} link={'https://www.linkedin.com/in/edson-lucas-b9310415b/'}/>
         </div>
       </nav>
 
@@ -58,6 +58,8 @@ function App() {
       <Experiences />
 
       <Projects />
+
+      <Contact />
     </div>
   );
 }

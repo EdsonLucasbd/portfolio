@@ -25,7 +25,7 @@ export default function Experiences() {
   return (
     <section id='experiences'>
       <div className='expContainer'>
-        <h5>&lt;experiences&gt;</h5>
+        <h4>&lt;experiences&gt;</h4>
 
         <div className='line' data-anime='up'/>
 
@@ -47,16 +47,16 @@ export default function Experiences() {
           </p>
         </div>
         
-        <h5>&lt;/experiences&gt;</h5>
+        <h4>&lt;/experiences&gt;</h4>
       </div>
 
       <div className='tecnologiesContainer'>
-        <h5>&lt;tecnologies&gt;</h5>
+        <h4>&lt;tecnologies&gt;</h4>
         <p id='js'data-anime='left'>JS</p>
         <p id='react'data-anime='right'>React</p>
         <p id='reactNative'data-anime='left'>React Native</p>
         <p id='python'data-anime='right'>Python</p>
-        <h5>&lt;/tecnologies&gt;</h5>
+        <h4>&lt;/tecnologies&gt;</h4>
       </div>
     </section>
   )

@@ -27,9 +27,9 @@ export default function Home() {
   return (
     <section id='home'>
       <div className="nameContainer">
-        <h5>&lt;developer&gt;</h5>
+        <h4>&lt;developer&gt;</h4>
         <p data-anime='left'>Edson<br/>Lucas</p>
-        <h5>&lt;/developer&gt;</h5>
+        <h4>&lt;/developer&gt;</h4>
       </div>
       
       <img data-anime='down' src="/fotoPortfolio.png"  alt="profile avatar"/>

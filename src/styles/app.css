@@ -17,7 +17,7 @@
 }
 
 .pages {
-  margin-left: 7rem;
+  margin-left: 5rem;
 }
 
 .pages a {
@@ -28,14 +28,15 @@
 
 .pages a:hover { 
   opacity: 100%;
+  color: #9465FF;
 }
 
 .contacts {
   position: absolute;
   top: 1.5rem;
-  left: 60%;
+  left: 65%;
 }
 
-.contacts :nth-child(1) {
-  margin-left: 1.5rem;
+.contacts > a {
+  margin-left: 3rem;
 }
