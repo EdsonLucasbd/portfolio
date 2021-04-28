@@ -62,7 +62,7 @@
   position: relative;
   flex-direction: row-reverse;
   top: -12rem;
-  right: 22.8rem;
+  right: 22.9rem;
   color: #fff;
 }
 
@@ -107,4 +107,26 @@
   font-size: 1rem;
   margin-left: 50px;
   color: #fff;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.8s;
+}
+
+[data-anime='up'] {
+  transform: translate3d(0, -80px, 0);
+}
+
+[data-anime='right'] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime='left'] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
 }
