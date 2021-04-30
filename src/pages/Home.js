@@ -36,7 +36,7 @@ export default function Home() {
 
       <div className="aboutContainer">
         <h5>&lt;about_me&gt;</h5>
-        <p data-anime='left'>Aspirante a programador full stack</p>
+        <p data-anime='left'>Aspirante a <br/>programador full stack</p>
         <p data-anime='right'>Gamer</p>
         <p data-anime='left'>Amante de séries</p>
         <h5>&lt;/about_me&gt;</h5>

@@ -25,8 +25,8 @@ export default function Contact() {
           <Input label='Assunto:' name='topic' type='text' data-anime='left'/>
           <Textarea label="Mensagem:" name="message" data-anime='right'/>
           <div className="buttonsContainer">
-            <input type="reset" value="Limpar" id='clear' data-anime='left'/>
-            <input type="submit" value="Enviar" id='submit' data-anime='right'/>
+            <input type="reset" value="Limpar" id='clear' />
+            <input type="submit" value="Enviar" id='submit'/>
           </div>
         </Form>
         <h4>&lt;/contact&gt;</h4>

@@ -56,3 +56,41 @@
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
 }
+
+@media(max-width: 1150px) {
+  #home img {
+    width: 200px;
+    margin: 20px;
+  }
+
+  .nameContainer p {
+    font-size: 3.5rem;
+    margin: 0 0 0 15px;
+    line-height: 45px;
+  }
+
+  .aboutContainer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #home {
+    padding-top: 4.5rem;
+  }
+  
+  #home img {
+    width: 190px;
+    margin: 0px;
+  }
+
+  .nameContainer p {
+    font-size: 2rem;
+    margin: 0 0 0 15px;
+    line-height: 30px;
+  }
+
+  .aboutContainer p {
+    font-size: 0.7rem;
+  }
+}

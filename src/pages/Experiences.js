@@ -40,7 +40,7 @@ export default function Experiences() {
         
         <div className="secondExpContainer" data-anime='left'>
           <div className='circle2'/>
-          <p id='year'>2021-Atualmente</p>
+          <p id='year'>2021-Now</p>
           <p id='expInfo'>
             Estágio<br/>Backend developer<br/>
             Pense Pack.

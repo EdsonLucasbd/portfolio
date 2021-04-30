@@ -7,8 +7,8 @@
 
 .menuContainer {
   color: #fff;
-  padding: 20px;
-  width: 100%;
+  padding: 1.25rem;
+  width: 100vw;
   font-size: 1.2rem;
   font-weight: 500;
   position: fixed;
@@ -39,4 +39,48 @@
 
 .contacts > a {
   margin-left: 3rem;
+}
+
+@media (max-width: 1150px) {
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .pages a {
+    margin: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .contacts > a {
+  }
+}
+
+@media (max-width: 680px) {
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .pages a {
+    margin: 0;
+  }
+
+  .contacts > a {
+    margin-left: 2rem;
+  }
 }

@@ -14,14 +14,15 @@
 
 .expContainer h4 {
   color: #9465FF;
-  padding-bottom: 10px;
+  padding-bottom: 0.62rem;
   padding: 0px;
 }
 
 .line {
   width: 0.2rem;
   height: 20rem;
-  margin-left: 100px;
+  margin-left: 6.25rem;
+  margin-bottom: -3.75rem;
   background-color: #9465FF;
 }
 
@@ -40,19 +41,19 @@
   display: flex;
   align-items: center;
   position: relative;
-  top: -20rem;
+  top: -16rem;
   left: 5.9rem;
   color: #fff;
 }
 
 .firstExpContainer #year {
-  margin-left: 10px;
+  margin-left: 0.62rem;
 }
 
 .firstExpContainer #expInfo {
   position: absolute;
   top: 1.5rem;
-  margin-left: 27px;
+  margin-left: 1.68rem;
   text-align: left;
 }
 
@@ -67,13 +68,13 @@
 }
 
 .secondExpContainer #year {
-  margin-right: 10px;
+  margin-right: 0.62rem;
 }
 
 .secondExpContainer #expInfo {
   position: absolute;
   top: 1.5rem;
-  margin-right: 27px;
+  margin-right: 1.68rem;
   text-align: right;
 }
 
@@ -87,25 +88,25 @@
 
 #js {
   font-size: 3rem;
-  margin-left: 100px;
+  margin-left: 6.25rem;
   color: #fff;
 }
 
 #react {
   font-size: 3rem;
-  margin-left: 211px;
+  margin-left: 13.18rem;
   color: #fff;
 }
 
 #reactNative {
   font-size: 2rem;
-  margin-left: 90px;
+  margin-left: 5.62rem;
   color: #fff;
 }
 
 #python {
   font-size: 1rem;
-  margin-left: 50px;
+  margin-left: 3.12rem;
   color: #fff;
 }
 
@@ -129,4 +130,140 @@
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 1150px) {
+  #experiences {
+    justify-content: space-between;
+  }
+
+  .expContainer {
+    margin-top: 10%;
+  }
+
+  .line {
+    height: 17rem;
+    margin-left: 5rem;
+    margin-bottom: -4rem;
+  }
+
+  .circle, .circle2 {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .firstExpContainer {
+    top: -13rem;
+    left: 4.76rem;
+  }
+
+  .firstExpContainer #expInfo {
+    font-size: 0.9rem;
+  }
+
+  .secondExpContainer {
+    top: -8rem;
+    right: 4.1rem;
+    justify-content: center;
+  }
+
+  .secondExpContainer #expInfo {
+    font-size: 0.9rem;
+    margin-right: 5rem;
+  }
+
+  .tecnologiesContainer {
+    margin-top: 10%;
+    margin-right: 1.25rem;
+  }
+
+  #js {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+  }
+  
+  #react {
+    font-size: 2.5rem;
+    margin-left: 3rem;
+  }
+  
+  #reactNative {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #experiences {
+    justify-content: space-between;
+  }
+
+  .expContainer {
+    margin-left: 7%;
+  }
+
+  .line {
+    height: 15rem;
+    margin-left: 5rem;
+    margin-bottom: -3.75rem;
+  }
+
+  .circle, .circle2 {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .firstExpContainer {
+    top: -10rem;
+    left: 4.76rem;
+  }
+
+  .firstExpContainer #expInfo {
+    font-size: 0.9rem;
+  }
+
+  .secondExpContainer {
+    top: -5rem;
+    right: 4rem;
+    justify-content: center;
+  }
+
+  .secondExpContainer #expInfo {
+    font-size: 0.9rem;
+    margin-right: 4rem;
+  }
+
+  .tecnologiesContainer {
+    margin-right: 1.25rem;
+  }
+
+  #js {
+    font-size: 2rem;
+    margin-left: 1.5rem;
+  }
+  
+  #react {
+    font-size: 2rem;
+    margin-left: 3rem;
+  }
+  
+  #reactNative {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 550px) {
+  .secondExpContainer {
+    top: -5rem;
+    right: 2.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .secondExpContainer {
+    top: -5rem;
+    right: 1.5rem;
+    justify-content: center;
+  }
 }
