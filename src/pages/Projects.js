@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section id='projects'>
       <h4>&lt;projects&gt;</h4>
-      <div className="blockContainer">
+      <div className="blockContainer" data-anime='left'>
         <Project link={"https://takecare-edsonlucasbd.vercel.app/"} image={'/projectsIcons/takecare.png'} tooltipId={'takeCare'}/>
         <ReactTooltip id='takeCare' place='top' multiline={true}>
           Take Care: <br/> 

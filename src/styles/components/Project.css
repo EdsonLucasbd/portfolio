@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  width: 177px;
-  height: 177px;
-  margin-right: 50px;
-  margin-left: 30px;
+  padding: 0.62rem;
+  width: 11.06rem;
+  height: 11.06rem;
+  margin-right: 3.12rem;
+  margin-left: 1.87rem;
   background-color: #1C1C1C;
   transition: all .2s ease-out
 }
@@ -37,4 +37,20 @@
 .block:hover {
   transform: translate(5px, -5px);
   box-shadow: -10px 8px 0px 1px #9465FF;
+}
+
+@media (max-width: 1150px) {
+  .block {
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .block {
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-right: 1.87rem;
+  }
 }

@@ -23,11 +23,15 @@ input, textArea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.62rem;
 }
 
 input {
   width: 19.209rem;
+}
+
+textArea {
+  resize: none;
 }
 
 .buttonsContainer {
@@ -42,10 +46,12 @@ input {
   height: 3.2rem;
   color: #fff;
   background-color: #db1d4b;
-  margin-right: 52px;
+  margin-right: 3.25rem;
   border-radius: 5%;
   border: none;
   cursor: pointer;
+  opacity: 50%;
+  transition: ease 0.2s;
 }
 
 #clear:hover {
@@ -59,6 +65,7 @@ input {
   border-radius: 5%;
   border: none;
   cursor: pointer;
+  transition: ease 0.2s;
 }
 
 #submit:hover {
@@ -81,4 +88,61 @@ input {
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
+}
+
+@media (max-width: 1150px) {
+  #contact {
+    padding-top: 10rem;
+  }
+
+  input, textArea {
+    margin-bottom: 0.50rem;
+  }
+  
+  input {
+    width: 16rem;
+  }
+
+  textArea {
+    width: 16rem !important;
+    height: 10rem !important;
+  }
+
+  #clear, #submit {
+    width: 6.5rem;
+    height: 2.8rem;
+    margin-bottom: 0;
+  }
+
+  #clear {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #contact {
+    padding-top: 7rem;
+  }
+
+  input, textArea {
+    margin-bottom: 0.50rem;
+  }
+  
+  input {
+    width: 15rem;
+  }
+
+  textArea {
+    width: 15rem !important;
+    height: 10rem !important;
+  }
+
+  #clear, #submit {
+    width: 6rem;
+    height: 2.8rem;
+  }
+
+  #clear {
+    margin-right: 3rem;
+  }
 }
