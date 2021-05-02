@@ -19,6 +19,15 @@
   margin: 0 0 0 30px;
 }
 
+.has-error, .has-error-label {
+  color: #db1d4b;
+}
+
+.has-error {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
 input, textArea {
   display: flex;
   align-items: center;
@@ -32,12 +41,6 @@ input {
 
 textArea {
   resize: none;
-}
-
-.buttonsContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 
@@ -59,17 +62,21 @@ textArea {
 }
 
 #submit {
-  width: 8rem;
-  height: 3.2rem;
+  width: 19.209rem;
+  height: 4rem;
   color: #0c0c0c;
-  border-radius: 5%;
+  background-color: #9465FF;
+  font-size: 1.5rem;
+  border-radius: 3%;
   border: none;
   cursor: pointer;
+
   transition: ease 0.2s;
+  opacity: 50%;
 }
 
 #submit:hover {
-  background-color: #9465FF;
+  opacity: 1;
 }
 
 [data-anime] {
@@ -108,15 +115,12 @@ textArea {
     height: 10rem !important;
   }
 
-  #clear, #submit {
-    width: 6.5rem;
+  #submit {
+    width: 16rem;
     height: 2.8rem;
     margin-bottom: 0;
   }
 
-  #clear {
-    margin-right: 3rem;
-  }
 }
 
 @media (max-width: 680px) {
@@ -137,12 +141,9 @@ textArea {
     height: 10rem !important;
   }
 
-  #clear, #submit {
-    width: 6rem;
+  #submit {
+    width: 15rem;
     height: 2.8rem;
-  }
-
-  #clear {
-    margin-right: 3rem;
+    font-size: 1.2rem;
   }
 }

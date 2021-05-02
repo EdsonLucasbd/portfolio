@@ -24,7 +24,8 @@ export default function Textarea({ name, label, rows = 15, cols = 40, ...rest })
 
   return (
     <div>
-      {label && <label htmlFor={fieldName}>{label}</label>}
+      {label && <label htmlFor={fieldName} className={error && 'has-error-label'}>{label}</label>}
+      {error && <span className='has-error'>{error}</span>}
 
       <textarea
         ref={textareaRef}
@@ -33,9 +34,8 @@ export default function Textarea({ name, label, rows = 15, cols = 40, ...rest })
         rows={rows}
         cols={cols}
         {...rest}
-      />
+        />
 
-      {error && <span>{error}</span>}
     </div>
   )
 }

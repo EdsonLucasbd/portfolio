@@ -31,10 +31,15 @@ export default function Input({ name, label, ...rest }) {
 
   return (
     <div>
-      {label && <label htmlFor={fieldName}>{label}</label>}
+      {label && <label htmlFor={fieldName} className={error && 'has-error-label'}>{label}</label>}
+      {error && <span className='has-error'>{error}</span>}
 
-      <input ref={inputRef} defaultValue={defaultValue} {...rest} />
+      <input 
+        ref={inputRef} 
+        defaultValue={defaultValue} 
+        {...rest} />
+        
     </div>
-  
+    
   )
 }
