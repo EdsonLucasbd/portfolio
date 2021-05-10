@@ -4,7 +4,6 @@ import * as Yup from 'yup';
 import Input from '../components/Input';
 import Textarea from '../components/Textarea';
 
-
 import '../styles/pages/Contact.css';
 
 export default function Contact() {
@@ -65,6 +64,7 @@ export default function Contact() {
   
   return (
     <section id='contact'>
+      <img src="/EL.png" alt="EL logo" data-anime='left'/>
       <div className='formContainer'>
         <h4>&lt;contact&gt;</h4>
         <Form ref={formRef} onSubmit={handleSubmit}>
@@ -77,6 +77,17 @@ export default function Contact() {
         </Form>
         <h4>&lt;/contact&gt;</h4>
       </div>
+      <footer className="copyrights">
+        <span>
+          Copyrights © {new Date().getFullYear()} - 
+        </span>
+          <a href="https://github.com/EdsonLucasbd">
+            &nbsp;Edson Lucas&nbsp;
+          </a>
+          <span>
+            - All rights reserved.
+          </span>
+      </footer>
     </section>
   )
 }

@@ -43,7 +43,7 @@ function App() {
       <nav className='menuContainer'>
         <div className='pages'>
           <a href='#home'>&lt;home&gt;</a>
-          <a href='#experiences'>&lt;experiences&gt;</a>
+          <a href='#tecnologies'>&lt;tecnologies&gt;</a>
           <a href='#projects'>&lt;projects&gt;</a>
           <a href='#contact'>&lt;contact&gt;</a>
         </div>

@@ -10,8 +10,23 @@
   }
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::selection{
+  background: #9465FF;
+  color: #0c0c0c;
+}::-moz-selection {
+  background: #9465FF;
+  color: #0c0c0c;
+}
+
 html,
 body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
   padding: 0;
   margin: 0;
   font: 500 1rem 'Poppins';

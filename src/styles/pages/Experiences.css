@@ -1,4 +1,4 @@
-#experiences {
+#tecnologies {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -80,6 +80,7 @@
 
 .tecnologiesContainer {
   width: 30%;
+  line-height: 40px;
 }
 
 .tecnologiesContainer h4 {
@@ -87,25 +88,25 @@
 }
 
 #js {
-  font-size: 3rem;
+  font-size: 4.7rem;
   margin-left: 6.25rem;
   color: #fff;
 }
 
 #react {
-  font-size: 3rem;
+  font-size: 4.7rem;
   margin-left: 13.18rem;
   color: #fff;
 }
 
 #reactNative {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-left: 5.62rem;
   color: #fff;
 }
 
 #python {
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: 3.12rem;
   color: #fff;
 }

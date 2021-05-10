@@ -23,8 +23,8 @@ export default function Experiences() {
   },[]);
   
   return (
-    <section id='experiences'>
-      <div className='expContainer'>
+    <section id='tecnologies'>
+      {/* <div className='expContainer'>
         <h4>&lt;experiences&gt;</h4>
 
         <div className='line' data-anime='up'/>
@@ -48,7 +48,7 @@ export default function Experiences() {
         </div>
         
         <h4>&lt;/experiences&gt;</h4>
-      </div>
+      </div> */}
 
       <div className='tecnologiesContainer'>
         <h4>&lt;tecnologies&gt;</h4>

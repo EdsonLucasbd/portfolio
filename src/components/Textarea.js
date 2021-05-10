@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react'
 
 import { useField } from '@unform/core'
 
-export default function Textarea({ name, label, rows = 15, cols = 40, ...rest }) {
+export default function Textarea({ name, label, rows = 7, cols = 40, ...rest }) {
   const textareaRef = useRef(null)
   const { fieldName, defaultValue = '', registerField, error } = useField(name)
 
