@@ -32,13 +32,15 @@ export default function Home() {
         <h4>&lt;/developer&gt;</h4>
       </div>
       
-      <img data-anime='down' src="/fotoPortfolio.png"  alt="profile avatar"/>
+      <img data-anime='down' src="/fotoPortfolio.png"  alt="profile avatar" className='avatar'/>
+      {/* <img src="/smoke1.png" alt="smoke" className='smoke'/> */}
 
       <div className="aboutContainer">
         <h5>&lt;about_me&gt;</h5>
-        <p data-anime='left'>Aspirante a <br/>programador full stack</p>
-        <p data-anime='right'>Gamer</p>
-        <p data-anime='left'>Amante de séries</p>
+        <p data-anime='left'>Estudante de sistemas <br/>de informação na Universidade <br/>do estado da Bahia.</p>
+        <p data-anime='right'>Programador front-end <br/>e mobile.</p>
+        <p data-anime='left'>Gamer.</p>
+        <p data-anime='right'>Amante de séries.</p>
         <h5>&lt;/about_me&gt;</h5>
       </div>
     </section>

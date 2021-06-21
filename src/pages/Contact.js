@@ -1,49 +1,38 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { Form } from '@unform/web';
 import * as Yup from 'yup';
-import Input from '../components/Input';
-import Textarea from '../components/Textarea';
+import Input from '../components/Form/Input';
+import Textarea from '../components/Form/Textarea';
 
 import '../styles/pages/Contact.css';
+// import client from '../services/mailService';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
+  const [fields, setFields] = useState({
+    fromName: '',
+    replyTo: '',
+    subject: '',
+    message: ''
+  });
   const formRef = useRef(null);
 
-  function functionThatSetsErrors() {
-    formRef.current.setErrors({
-
-      name: 'Informe seu nome',
-      email: 'Informe seu email',
-      topic: 'O assunto é importante',
-      message: 'Qual sua mensagem?',
-
-    });
-
-    formRef.current.setFieldError('name', 'Informe seu nome');
-    formRef.current.setFieldError('email', 'Informe seu email');
-    formRef.current.setFieldError('topic', 'O assunto é importante');
-    formRef.current.setFieldError('message', 'Qual sua mensagem?');
-
-  }
-
-
   async function handleSubmit (data, { reset }) {
-    
-
     try {
-      formRef.current.setErrors(functionThatSetsErrors());
+      formRef.current.setErrors({});
   
       const schema = Yup.object().shape({
-        name: Yup.string().required(),
-        email: Yup.string().email().required(),
-        topic: Yup.string().required(),
-        message: Yup.string().required(),
+        fromName: Yup.string().min(3, 'Seu nome é maior que isso...').required('Informe seu nome'),
+        replyTo: Yup.string().email().required('Informe seu email'),
+        subject: Yup.string().required('O assunto é importante'),
+        message: Yup.string().required('Qual sua mensagem?'),
       });
       
       await schema.validate(data, {
         abortEarly: false,
       });
-      console.log(data);
+      // handleFormSubmit(fields.email, fields.subject, fields.message);
+      sendEmail()
       reset();
       alert('Obrigado pelo contato!');
     } catch (err) {
@@ -61,19 +50,39 @@ export default function Contact() {
       }
     }
   }
+
+  function handleInputChange(){
+    const allValues = formRef.current.getData()
+    for (let value in allValues){
+      fields[value] = allValues[value];
+      setFields(fields);
+    }
+  }
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, e.target,process.env.USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset()
+  }
   
   return (
     <section id='contact'>
       <img src="/EL.png" alt="EL logo" data-anime='left'/>
       <div className='formContainer'>
         <h4>&lt;contact&gt;</h4>
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <Input label='Nome:' name='name' type='text' data-anime='left'/>
-          <Input label='Email:' name='email'  data-anime='right'/>
-          <Input label='Assunto:' name='topic' type='text' data-anime='left'/>
-          <Textarea label="Mensagem:" name='message' data-anime='right'/>
+        <Form ref={formRef} onSubmit={sendEmail}>
+          <Input label='Nome:' name='fromName' data-anime='left' onChange={handleInputChange}/>
+          <Input label='Email:' name='replyTo'  data-anime='right'onChange={handleInputChange}/>
+          <Input label='Assunto:' name='subject' data-anime='left' onChange={handleInputChange}/>
+          <Textarea label="Mensagem:" name='message' data-anime='right' onChange={handleInputChange}/>
           
-          <input type="submit" value="Enviar" id='submit' />
+          <button type="submit" id='submit'>Enviar</button>
         </Form>
         <h4>&lt;/contact&gt;</h4>
       </div>

@@ -6,9 +6,20 @@
   padding-top: 2.5rem;
 }
 
-#home img {
+.avatar {
   width: 300px;
   margin: 0 84px;
+  border: 2px inset #9365ff;
+  border-radius: 50%;
+  transition: box-shadow 0.5s;
+  box-shadow: 0px 0px 35px #9365ff, 0px 0px 15px #9365ffc0 inset;
+}
+
+.smoke {
+  position: absolute;
+  top: 10%;
+  height: 900px;
+  width: 2200px;
 }
 
 .nameContainer h4 {
@@ -55,6 +66,15 @@
 [data-anime].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media(max-width: 1150px) {
