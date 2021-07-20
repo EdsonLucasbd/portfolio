@@ -23,7 +23,7 @@ export default function Experiences() {
   },[]);
   
   return (
-    <section id='tecnologies'>
+    <div id='tecnologies'>
       {/* <div className='expContainer'>
         <h4>&lt;experiences&gt;</h4>
 
@@ -58,6 +58,6 @@ export default function Experiences() {
         <p id='python'data-anime='right'>Python</p>
         <h4>&lt;/tecnologies&gt;</h4>
       </div>
-    </section>
+    </div>
   )
 }

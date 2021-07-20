@@ -12,23 +12,9 @@
   font-size: 1.2rem;
   font-weight: 500;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: #0c0c0c;
-}
-
-.pages {
-  margin-left: 5rem;
-}
-
-.pages a {
-  margin: 1rem;
-  opacity: 20%;
-  transition: linear 0.5s;
-}
-
-.pages a:hover { 
-  opacity: 100%;
-  color: #9465FF;
+  top: 0;
 }
 
 .contacts {
@@ -45,21 +31,10 @@
   .menuContainer {
     display: flex;
     justify-content: space-between;
-    position: fixed;
   }
 
-  .pages {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
-  }
-
-  .pages a {
-    margin: 0.3rem;
-    font-size: 1.2rem;
-  }
-
-  .contacts > a {
+  .contacts {
+    margin-right: 1rem;
   }
 }
 
@@ -70,17 +45,7 @@
     position: fixed;
   }
 
-  .pages {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-  }
-
-  .pages a {
-    margin: 0;
-  }
-
   .contacts > a {
-    margin-left: 2rem;
+    margin-left: 0.9rem;
   }
 }

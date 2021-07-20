@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 import Button from './components/Button';
+import Menu from './components/Menu';
 import Home from './pages/Home';
 import Experiences from './pages/Experiences';
 import Projects from './pages/Projects';
@@ -41,12 +42,7 @@ function App() {
   return (
     <div className='containter'>
       <nav className='menuContainer'>
-        <div className='pages'>
-          <a href='#home'>&lt;home&gt;</a>
-          <a href='#tecnologies'>&lt;tecnologies&gt;</a>
-          <a href='#projects'>&lt;projects&gt;</a>
-          <a href='#contact'>&lt;contact&gt;</a>
-        </div>
+        <Menu />
         <div className='contacts'>
           <Button iconName={faGithub} link={'https://github.com/EdsonLucasbd'}/>
           <Button iconName={faLinkedinIn} link={'https://www.linkedin.com/in/edson-lucas-b9310415b/'}/>

@@ -106,7 +106,7 @@
 }
 
 #python {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-left: 3.12rem;
   color: #fff;
 }
@@ -189,8 +189,13 @@
   }
   
   #reactNative {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-left: 2rem;
+  }
+
+  #python {
+    font-size: 1.5rem;
+    margin-left: 6rem
   }
 }
 
@@ -251,6 +256,11 @@
   #reactNative {
     font-size: 1.6rem;
     margin-left: 2rem;
+  }
+
+  #python {
+    font-size: 1.3rem;
+    margin-left: 4rem
   }
 }
 

@@ -7,7 +7,7 @@ import '../styles/pages/Projects.css';
 
 export default function Projects() {
   return (
-    <section id='projects'>
+    <div id='projects'>
       <h4>&lt;projects&gt;</h4>
       <div className="blockContainer" data-anime='left'>
         <Project link={"https://takecare-edsonlucasbd.vercel.app/"} image={'/projectsIcons/takecare.png'} tooltipId={'takeCare'}/>
@@ -31,6 +31,6 @@ export default function Projects() {
 
       </div>
       <h4>&lt;/projects&gt;</h4>
-    </section>
+    </div>
   )
 }

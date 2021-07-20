@@ -1,0 +1,57 @@
+.copyrights {
+  position: absolute;
+  top: 394%;
+  right: 40%;
+}
+
+.copyrights a {
+  font-size: 1.1rem;
+  opacity: 100%;
+}
+
+.copyrights span {
+  opacity: 60%;
+}
+
+@media(max-width: 1150px) {
+  .copyrights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    right: 28%;
+  }
+
+  p {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .copyrights a {
+    font-size: 0.9rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyrights span {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 680px) {
+  .copyrights {
+    right: 15%;
+  }
+
+  .copyrights a {
+    font-size: 0.7rem;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyrights span {
+    font-size: 0.6rem;
+  }
+}

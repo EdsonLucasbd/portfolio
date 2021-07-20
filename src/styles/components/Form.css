@@ -1,49 +1,26 @@
-#contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
-  padding-top: 2.5rem;
-  color: #fff;
-}
-
-.formContainer h4 {
-  color: #9465FF;
-}
-
-.formContainer form {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 0 0 1.87rem;
-}
-
 .has-error, .has-error-label {
   color: #db1d4b;
 }
 
 .has-error {
   font-size: 0.8rem;
-  margin-left: 0.625rem;
+  margin-left: 10px;
 }
 
-input, textArea {
+#message {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.62rem;
+  width: 19.2rem;
+  height: 10rem;
 }
 
 input {
   width: 19.209rem;
 }
 
-textArea {
-  resize: none;
-}
-
-/* #submit {
+#submit {
   width: 19.209rem;
   height: 4rem;
   color: #0c0c0c;
@@ -66,7 +43,7 @@ textArea {
   background-color: #9365ff3f;
   transition: none;
   opacity: unset;
-} */
+}
 
 [data-anime] {
   opacity: 0;
@@ -87,14 +64,14 @@ textArea {
 }
 
 @media (max-width: 1150px) {
-  #contact {
-    padding-top: 10rem;
-  }
-
   input, textArea {
     margin-bottom: 0.50rem;
   }
   
+  #message {
+    margin-bottom: 0.50rem;
+  }
+
   input {
     width: 16rem;
   }
@@ -109,25 +86,23 @@ textArea {
     height: 2.8rem;
     margin-bottom: 0;
   }
+
 }
 
 @media (max-width: 680px) {
-  #contact {
-    padding-top: 7rem;
-  }
-
   input, textArea {
     margin-bottom: 0.50rem;
+  }
+  #message {
+    margin-bottom: 0.50rem;
+    width: 15rem !important;
+    height: 10rem !important;
   }
   
   input {
     width: 15rem;
   }
 
-  textArea {
-    width: 15rem !important;
-    height: 10rem !important;
-  }
 
   #submit {
     width: 15rem;
