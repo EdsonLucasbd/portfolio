@@ -49,8 +49,9 @@
 
 @media (max-width: 680px) {
   .block {
-    width: 7.5rem;
-    height: 7.5rem;
-    margin-right: 1.87rem;
+    width: 8.5rem;
+    height: 5.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }

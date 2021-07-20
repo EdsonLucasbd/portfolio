@@ -98,7 +98,7 @@
   }
 }
 
-@media(min-width:681px) and (max-width: 1150px) {
+@media(max-width: 1150px) {
   #home img {
     width: 12.5rem;
     margin: 1.25rem;
@@ -125,7 +125,7 @@
   }
   
   #home img {
-    width: 11.87rem;
+    width: 9rem;
     margin: 1rem;
   }
 

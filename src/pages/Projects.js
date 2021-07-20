@@ -29,6 +29,14 @@ export default function Projects() {
           editar ou excluir os existentes.
         </ReactTooltip>
 
+        <Project link={"https://snack.expo.dev/@edlucas07/github.com-edsonlucasbd-getyourpassword"} 
+          image={'/projectsIcons/password.png'}
+          tooltipId={'passwordApp'}
+        />
+        <ReactTooltip id='passwordApp' place='top'>
+          Gerador de senhas aleatórias
+        </ReactTooltip>
+
       </div>
       <h4>&lt;/projects&gt;</h4>
     </div>
