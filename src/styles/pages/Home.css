@@ -19,7 +19,7 @@
   z-index: 1;
 }
 
-.tk-blob {
+#blob{
   display: flex;
   --time: 50s; 
   --amount: 10; 
@@ -114,7 +114,7 @@
     font-size: 0.8rem;
   }
 
-  .tk-blob {
+  #blob {
     width: 16rem;
   }
 }
@@ -147,7 +147,7 @@
     font-size: 0.7rem;
   }
 
-  .tk-blob {
+  #blob {
     width: 15rem;
   }
 }
