@@ -51,12 +51,12 @@ export default function Experiences() {
       </div> */}
 
       <div className='tecnologiesContainer'>
-        <h4>&lt;tecnologies&gt;</h4>
+        <h4>&lt;technologies&gt;</h4>
         <p id='js'data-anime='left'>JS</p>
         <p id='react'data-anime='right'>React</p>
         <p id='reactNative'data-anime='left'>React Native</p>
         <p id='python'data-anime='right'>Python</p>
-        <h4>&lt;/tecnologies&gt;</h4>
+        <h4>&lt;/technologies&gt;</h4>
       </div>
     </div>
   )
