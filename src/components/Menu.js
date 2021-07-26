@@ -19,7 +19,7 @@ export default function Menu() {
     return (
       <div className='pages'>
         <a href='#home'>&lt;home&gt;</a>
-        <a href='#tecnologies'>&lt;tecnologies&gt;</a>
+        <a href='#technologies'>&lt;technologies&gt;</a>
         <a href='#projects'>&lt;projects&gt;</a>
         <a href='#contact'>&lt;contact&gt;</a>
       </div>
@@ -36,7 +36,7 @@ export default function Menu() {
          <span></span>
         <div className='pages-mobile'>
           <a href='#home'>&lt;home&gt;</a>
-          <a href='#tecnologies'>&lt;tecnologies&gt;</a>
+          <a href='#technologies'>&lt;technologies&gt;</a>
           <a href='#projects'>&lt;projects&gt;</a>
           <a href='#contact'>&lt;contact&gt;</a>
         </div>

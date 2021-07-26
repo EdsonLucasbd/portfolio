@@ -1,4 +1,4 @@
-#tecnologies {
+#technologies {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -78,12 +78,12 @@
   text-align: right;
 }
 
-.tecnologiesContainer {
+.technologiesContainer {
   width: 30%;
   line-height: 40px;
 }
 
-.tecnologiesContainer h4 {
+.technologiesContainer h4 {
   color: #9465FF;
 }
 
@@ -173,7 +173,7 @@
     margin-right: 5rem;
   }
 
-  .tecnologiesContainer {
+  .technologiesContainer {
     margin-top: 10%;
     margin-right: 1.25rem;
   }
@@ -239,7 +239,7 @@
     margin-right: 4rem;
   }
 
-  .tecnologiesContainer {
+  .technologiesContainer {
     margin-right: 1.25rem;
   }
 

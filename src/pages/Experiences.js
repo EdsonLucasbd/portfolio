@@ -23,7 +23,7 @@ export default function Experiences() {
   },[]);
   
   return (
-    <div id='tecnologies'>
+    <div id='technologies'>
       {/* <div className='expContainer'>
         <h4>&lt;experiences&gt;</h4>
 
@@ -50,7 +50,7 @@ export default function Experiences() {
         <h4>&lt;/experiences&gt;</h4>
       </div> */}
 
-      <div className='tecnologiesContainer'>
+      <div className='technologiesContainer'>
         <h4>&lt;technologies&gt;</h4>
         <p id='js'data-anime='left'>JS</p>
         <p id='react'data-anime='right'>React</p>
