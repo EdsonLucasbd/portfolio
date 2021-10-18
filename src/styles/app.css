@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #0c0c0c;
+}
+
+.menuContainer {
+  color: #fff;
+  padding: 1.25rem;
+  width: 100vw;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: fixed;
+  z-index: 2;
+  background-color: #0c0c0c;
+  top: 0;
+}
+
+.contacts {
+  position: absolute;
+  top: 1.5rem;
+  left: 65%;
+}
+
+.contacts > a {
+  margin-left: 3rem;
+}
+
+@media (max-width: 1150px) {
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+  }
+
+  .contacts > a {
+    margin-left: 0.9rem;
+  }
+}

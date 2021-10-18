@@ -1,0 +1,124 @@
+.menuContainer {
+  color: #fff;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #0c0c0c;
+}
+
+.pages {
+  margin-left: 5rem;
+}
+
+.pages a {
+  margin: 1rem;
+  opacity: 20%;
+  transition: linear 0.5s;
+}
+
+.pages a:hover { 
+  opacity: 100%;
+  color: #9465FF;
+}
+
+.contacts {
+  position: absolute;
+  top: 1.5rem;
+  left: 60%;
+}
+
+.contacts :nth-child(1) {
+  margin-left: 1.5rem;
+}
+
+/* Menu para versão mobile */
+#hamburger-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 1.5rem;
+  width: 2rem;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 0.2rem;
+  width: 100%;
+  border-radius: 30px;
+  background: #fff;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 0.5rem;
+}
+
+label span:nth-child(3) {
+  top: 1rem;
+}
+
+#hamburger-menu:checked + label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 8px
+}
+
+#hamburger-menu:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger-menu:checked + label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 8px
+}
+
+.pages-mobile {
+  margin-top: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+.pages-mobile a {
+  font-size: 1rem;
+} 
+
+@media(max-width: 1150px) {
+  .menuContainer {
+    height: 24vh;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .pages a {
+    font-size: 1.1rem;
+    margin: 5px
+  }
+}
+
+@media (max-width: 680px) {
+  .menuContainer {
+    height: 21vh;
+  }
+
+  .pages {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .pages a {
+    margin: 2px;
+  }
+}

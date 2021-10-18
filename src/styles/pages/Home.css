@@ -1,0 +1,153 @@
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 2.5rem;
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 18.75rem;
+  margin: 0 5.25rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#blob{
+  display: flex;
+  --time: 50s; 
+  --amount: 10; 
+  --fill: #9365ff;
+  width: 30rem;
+  position: absolute;
+}
+
+/* .smoke {
+  position: absolute;
+  top: 10%;
+  height: 900px;
+  width: 2200px;
+} */
+
+.nameContainer h4 {
+  color: #9465FF;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.nameContainer p {
+  color: #fff;
+  font-size: 4.5rem;
+  margin: 0 0 0 0.93rem;
+  line-height: 4.37rem;
+}
+
+.aboutContainer h5 {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #9465FF;
+}
+
+.aboutContainer p {
+  color: #fff;
+  margin: 0 0 0 0.93rem;
+}
+
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19rem;
+  height: 24rem;
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.8s;
+}
+
+[data-anime='down'] {
+  transform: translate3d(0, 80px, 0);
+}
+
+[data-anime='right'] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime='left'] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media(max-width: 1150px) {
+  #home img {
+    width: 12.5rem;
+    margin: 1.25rem;
+  }
+
+  .nameContainer p {
+    font-size: 3.5rem;
+    margin: 0 0 0 0.93rem;
+    line-height: 2.81rem;
+  }
+
+  .aboutContainer p {
+    font-size: 0.8rem;
+  }
+
+  #blob {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #home {
+    padding-top: 4.5rem;
+  }
+  
+  #home img {
+    width: 9rem;
+    margin: 1rem;
+  }
+
+  .nameContainer {
+    margin-left: 1rem;
+  }
+
+  .nameContainer p {
+    font-size: 2rem;
+    margin: 0 0 0 0.93rem;
+    line-height: 1.87rem;
+  }
+
+  .aboutContainer {
+    margin-right: 1rem;
+  }
+
+  .aboutContainer p {
+    font-size: 0.7rem;
+  }
+
+  #blob {
+    width: 15rem;
+  }
+}

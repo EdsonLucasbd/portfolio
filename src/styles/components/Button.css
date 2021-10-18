@@ -1,0 +1,12 @@
+a {
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  transition: linear 0.5s;
+}
+
+a:hover {
+  color: #9465FF;
+}
