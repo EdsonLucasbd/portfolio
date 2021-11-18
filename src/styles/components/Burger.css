@@ -1,0 +1,40 @@
+.burgerContainer {
+  position: absolute;
+  top: 20%;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.burgerContainer:focus {
+  outline: none;
+}
+
+.icon {
+  width: 2rem;
+  height: 0.15rem;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+  transform: translateX(0) rotate(0);
+}
+
+.firstChildOpen {
+  transform: rotate(45deg);
+}
+.secondChildOpen {
+  opacity: 0;
+}
+.thirdChildOpen {
+  transform: rotate(-45deg);
+}

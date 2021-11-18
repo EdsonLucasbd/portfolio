@@ -1,19 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useOnClickOutside } from '../hook/hook';
 
 import '../styles/components/Menu.css';
+import Burger from './BurgerMenu/Burger';
+import MobileMenu from './BurgerMenu/MobileMenu';
 
 export default function Menu() {
   const [isMobile, setIsMobile] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const node = useRef(); 
+  useOnClickOutside(node, () => setOpen(false));
 
   useEffect(() => {
     if(window.innerWidth <= 650) {
       setIsMobile(true);
     }
   }, []);
-
- /*  function handleClick() {
-    
-  } */
 
   if(!isMobile) {
     return (
@@ -26,22 +29,11 @@ export default function Menu() {
     )
   }
   else {
-    console.log('É mobile')
     return (
-      <>
-       <input type="checkbox"  id="hamburger-menu" />
-       <label htmlFor="hamburger-menu">
-         <span></span>
-         <span></span>
-         <span></span>
-        <div className='pages-mobile'>
-          <a href='#home'>&lt;home&gt;</a>
-          <a href='#technologies'>&lt;technologies&gt;</a>
-          <a href='#projects'>&lt;projects&gt;</a>
-          <a href='#contact'>&lt;contact&gt;</a>
-        </div>
-       </label>
-      </>  
+      <div ref={node}>
+        <Burger open={open} setOpen={setOpen}/>
+        <MobileMenu open={open} setOpen={setOpen}/>
+      </div>
     )
   }
   
