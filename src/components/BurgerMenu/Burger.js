@@ -5,8 +5,6 @@ import '../../styles/components/Burger.css'
 
 const Burger = ({ open, setOpen }) => {
   const button = document.querySelectorAll('.icon')
-  console.log('aqui', !button[0]?.classList.contains('firstChildOpen'))
-  console.log(button[0]?.classList.contains('firstChildOpen'))
   
   if (!button[0]?.classList.contains('firstChildOpen')) {
     if (open) {
