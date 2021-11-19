@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   background-color: #9465FF;
-  height: 100vh;
+  height: 100%;
   width: 45%;
   text-align: left;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;

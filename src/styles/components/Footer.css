@@ -55,3 +55,9 @@
     font-size: 0.6rem;
   }
 }
+
+@media (max-width: 421px) {
+  .copyrights {
+    padding-top: 37vh;
+  }
+}

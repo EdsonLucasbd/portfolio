@@ -13,9 +13,9 @@
 }
 
 .avatar {
-  width: 18.75rem;
+  width: 14rem;
   margin: 0 5.25rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   z-index: 1;
 }
 
@@ -100,7 +100,7 @@
 
 @media(max-width: 1150px) {
   #home img {
-    width: 12.5rem;
+    width: 9rem;
     margin: 1.25rem;
   }
 
@@ -149,5 +149,11 @@
 
   #blob {
     width: 15rem;
+  }
+}
+
+@media (max-width: 421px) {
+  #home img {
+    width: 7rem;
   }
 }
