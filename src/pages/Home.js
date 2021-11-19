@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
     <div className="avatarContainer">
-      <img data-anime='down' src="/fotoPortfolio.png"  alt="profile avatar" className='avatar'/>
+      <img data-anime='down' src="/3d-hands.svg"  alt="profile avatar" className='avatar'/>
 
       <div className="tk-blob" id="blob">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440.7 428.7">
