@@ -37,6 +37,14 @@ export default function Projects() {
           Gerador de senhas aleatórias
         </ReactTooltip>
 
+        <Project link={"https://geek-cord-edsonlucasbd.vercel.app/"} 
+          image={'/projectsIcons/geekcord.png'}
+          tooltipId={'geekcord'}
+        />
+        <ReactTooltip id='geekcord' place='top'>
+          Bate papo online, você pode acessar o chat com um nome de usuário do Github.
+        </ReactTooltip>
+
       </div>
       <h4>&lt;/projects&gt;</h4>
     </div>
