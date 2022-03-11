@@ -12,13 +12,13 @@
 
 .pages a {
   margin: 1rem;
-  opacity: 20%;
+  opacity: 0.2;
   color: #fff !important;
   transition: linear 0.5s;
 }
 
 .pages a:hover { 
-  opacity: 100%;
+  opacity: 1;
   color: #9465FF !important;
 }
 
