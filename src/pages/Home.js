@@ -5,6 +5,7 @@ import '../styles/static/scrollIcon.css';
 
 import { useFetch } from '../hook/useFetch';
 
+import Markdown from 'markdown-to-jsx';
 import qs from 'qs';
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
     encodeValuesOnly: true,
   });
   const { loading, result } = useFetch(`https://portfolio-backend-cms.herokuapp.com/api/pages/1?${query}`);
-  
+
   useEffect(() => {
     const target = document.querySelectorAll('[data-anime]');
     const animationClass = 'animate';
@@ -47,12 +48,21 @@ export default function Home() {
     <div id='home'>
       <div className="nameContainer">
         <h4>&lt;developer&gt;</h4>
-        <p data-anime='left'>{!loading && result.attributes.body[0].tagContent}</p>
+        <div data-anime='left'>{!loading &&
+          <Markdown options={{ wrapper: 'paragraph' }}>
+            {result.attributes.body[0].tagContent}
+          </Markdown>
+        }</div>
         <h4>&lt;/developer&gt;</h4>
       </div>
 
       <div className="avatarContainer">
-        <img data-anime='down' src={!loading && result.attributes.body[0].photo.data.attributes.url} alt="profile avatar" className='avatar' />
+        <img data-anime='down' src={
+          !loading
+            ? result.attributes.body[0].photo.data.attributes.formats.medium.url
+            : undefined
+        } alt="profile avatar" className='avatar'
+        />
 
         <div className="tk-blob" id="blob">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440.7 428.7">
@@ -64,7 +74,11 @@ export default function Home() {
 
       <div className="aboutContainer">
         <h5>&lt;about_me&gt;</h5>
-        <p data-anime='right'>{!loading && result.attributes.body[1].tagContent}</p>
+        <div data-anime='right'>{!loading &&
+          <Markdown options={{ wrapper: 'paragraph' }}>
+            {result.attributes.body[1].tagContent}
+          </Markdown>
+        }</div>
         <h5>&lt;/about_me&gt;</h5>
       </div>
     </div>
