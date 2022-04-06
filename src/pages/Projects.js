@@ -1,16 +1,45 @@
 import React from 'react';
-import ReactTooltip from "react-tooltip";
 
 import Project from '../components/Project';
+
+import qs from 'qs';
+
+import { useFetch } from '../hook/useFetch';
 
 import '../styles/pages/Projects.css';
 
 export default function Projects() {
+  const query = qs.stringify({
+    populate: [
+      'body',
+      'body.project',
+      'body.project.projectIcon'
+    ]
+  }, {
+    encodeValuesOnly: true,
+  });
+
+  const { loading, result } = useFetch(`https://portfolio-backend-cms.herokuapp.com/api/pages/3?${query}`);
+  
   return (
     <div id='projects'>
       <h4>&lt;projects&gt;</h4>
       <div className="blockContainer" data-anime='left'>
-        <Project link={"https://takecare-edsonlucasbd.vercel.app/"} image={'/projectsIcons/takecare.png'} tooltipId={'takeCare'}/>
+        {loading === false && result.attributes.body[0].project.map((project) => {
+
+          return (
+            <>
+              <Project 
+                link={project.projectLink}
+                image={project.projectIcon.data.attributes.url}
+                projectName={project.projectName}
+                projectDescription={project.projectDescription}
+              />
+            </>
+          )
+          })
+        }
+        {/* <Project link={"https://takecare-edsonlucasbd.vercel.app/"} image={'/projectsIcons/takecare.png'} tooltipId={'takeCare'}/>
         <ReactTooltip id='takeCare' place='top' multiline={true}>
           Take Care: <br/> 
           App baseado na <br/>
@@ -43,7 +72,7 @@ export default function Projects() {
         />
         <ReactTooltip id='geekcord' place='top'>
           Bate papo online, você pode acessar o chat com um nome de usuário do Github.
-        </ReactTooltip>
+        </ReactTooltip> */}
 
       </div>
       <h4>&lt;/projects&gt;</h4>

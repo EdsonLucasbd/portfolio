@@ -39,6 +39,11 @@
   box-shadow: -10px 8px 0px 1px #9465FF;
 }
 
+.tooltip {
+  max-width: 18.75rem !important;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 1150px) {
   .block {
     width: 10rem;
