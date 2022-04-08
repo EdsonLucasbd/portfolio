@@ -48,10 +48,11 @@ export default function Home() {
     <div id='home'>
       <div className="nameContainer">
         <h4>&lt;developer&gt;</h4>
-        <div data-anime='left'>{!loading &&
+        <div data-anime='left'>{!loading ?
           <Markdown options={{ wrapper: 'paragraph' }}>
             {result.attributes.body[0].tagContent}
           </Markdown>
+          : <p className='alternativeText'>Carregando...</p>
         }</div>
         <h4>&lt;/developer&gt;</h4>
       </div>
@@ -60,8 +61,11 @@ export default function Home() {
         <img data-anime='down' src={
           !loading
             ? result.attributes.body[0].photo.data.attributes.formats.medium.url
-            : undefined
-        } alt="profile avatar" className='avatar'
+            : "loading_img_transparent.gif"
+        } 
+        onError="loading_img_transparent.gif"
+        alt="profile avatar" 
+        className='avatar'
         />
 
         <div className="tk-blob" id="blob">
@@ -74,10 +78,11 @@ export default function Home() {
 
       <div className="aboutContainer">
         <h5>&lt;about_me&gt;</h5>
-        <div data-anime='right'>{!loading &&
+        <div data-anime='right'>{!loading ?
           <Markdown options={{ wrapper: 'paragraph' }}>
             {result.attributes.body[1].tagContent}
           </Markdown>
+          : <p>Carregando...</p>
         }</div>
         <h5>&lt;/about_me&gt;</h5>
       </div>

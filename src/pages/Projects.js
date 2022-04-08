@@ -25,7 +25,7 @@ export default function Projects() {
     <div id='projects'>
       <h4>&lt;projects&gt;</h4>
       <div className="blockContainer" data-anime='left'>
-        {loading === false && result.attributes.body[0].project.map((project) => {
+        {loading === false ? result.attributes.body[0].project.map((project) => {
           return (
             <Project
               key={project.id}
@@ -36,42 +36,8 @@ export default function Projects() {
             />
           )
         })
-        }
-        {/* <Project link={"https://takecare-edsonlucasbd.vercel.app/"} image={'/projectsIcons/takecare.png'} tooltipId={'takeCare'}/>
-        <ReactTooltip id='takeCare' place='top' multiline={true}>
-          Take Care: <br/> 
-          App baseado na <br/>
-          técnica pomodoro<br/>
-          para quem passa muito<br/>
-          tempo em frente ao PC.
-        </ReactTooltip>
-
-        <Project link={"https://best-desafio-final.herokuapp.com/"} image={'/projectsIcons/cfpicon.png'} tooltipId={'cfp'}/>
-        <ReactTooltip id='cfp' place='top' multiline={true}>
-          Controle de finanças pessoais: <br/>
-          App que usa uma base <br/>
-          de dados ficticia para fazer <br/>
-          o balanço de despesas mensais. <br/>
-          Podendo receber novos dados, <br/>
-          editar ou excluir os existentes.
-        </ReactTooltip>
-
-        <Project link={"https://snack.expo.dev/@edlucas07/github.com-edsonlucasbd-getyourpassword"} 
-          image={'/projectsIcons/password.png'}
-          tooltipId={'passwordApp'}
-        />
-        <ReactTooltip id='passwordApp' place='top'>
-          Gerador de senhas aleatórias
-        </ReactTooltip>
-
-        <Project link={"https://geek-cord-edsonlucasbd.vercel.app/"} 
-          image={'/projectsIcons/geekcord.png'}
-          tooltipId={'geekcord'}
-        />
-        <ReactTooltip id='geekcord' place='top'>
-          Bate papo online, você pode acessar o chat com um nome de usuário do Github.
-        </ReactTooltip> */}
-
+        : <p>Carregando...</p>
+      }
       </div>
       <h4>&lt;/projects&gt;</h4>
     </div>

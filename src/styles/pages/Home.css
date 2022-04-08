@@ -53,6 +53,13 @@
   flex-wrap: wrap;
 }
 
+.nameContainer p.alternativeText {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 0 0 0.93rem;
+  flex-wrap: wrap;
+}
+
 .aboutContainer {
   max-width: 17.75rem;
 }
