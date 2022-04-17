@@ -61,9 +61,9 @@ export default function Home() {
         <img data-anime='down' src={
           !loading
             ? result.attributes.body[0].photo.data.attributes.formats.medium.url
-            : "loading_img_transparent.gif"
+            : "loader1.gif"
         } 
-        onError="loading_img_transparent.gif"
+        onError="loader1.gif"
         alt="profile avatar" 
         className='avatar'
         />
